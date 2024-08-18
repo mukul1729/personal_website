@@ -1,0 +1,92 @@
+title = "Mukul Joshi"
+base_url = "https://mukuljoshi.xyz"
+
+compile_sass = true
+minify_html = true
+generate_feeds = true
+# Only the first file will be used in the navbar feed button,
+# other feeds will still be available in page's head.
+feed_filenames = ["rss.xml", "atom.xml"]
+build_search_index = true
+
+default_language = "en"
+
+taxonomies = [{ name = "tags", feed = true }]
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "solarized-dark", filename = "syntax-theme-dark.css" },
+  { theme = "solarized-light", filename = "syntax-theme-light.css" },
+]
+smart_punctuation = true
+bottom_footnotes = true
+
+[search]
+index_format = "elasticlunr_json"
+
+[extra]
+# Sets theme and browser theme color.
+# See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
+primary_color = "#ff7800"
+# Same as primary_color, but with 20% opacity
+primary_color_alpha = "rgba(1, 120, 0, 0.2)"
+# Ditto but for the dark mode.
+# If not set regular variant will be used.
+primary_color_dark = "#96DED1"
+primary_color_dark_alpha = "rgba(96, 120, 130, 0.9)"
+# Use emoji as a favicon.
+# Only one emoji is being rendered, everything else is truncated.
+# emoji_favicon = "🦆🪶"
+# URL to website's issue tracker
+# Additional CSS stylesheets; expects them to be in the "./static/" directory.
+# If you are using Sass it will be generated there automatically.
+# stylesheets = [
+#   "YOUR_STYLE.css",
+#   "ALSO_YOUR_STYLE.css"
+# ]
+# Additional JavaScript scripts; expects them to be in the "./static/" directory.
+# scripts = [
+#   "YOUR_SCRIPT.js",
+#   "ALSO_YOUR_SCRIPT.js"
+# ]
+# Whether to show "copy code" button on all code blocks
+# that have the language set.
+# See https://www.getzola.org/documentation/content/syntax-highlighting/
+show_copy_button = true
+# Whether to show estimated read time in posts.
+# Calculated using the simple math: number of words ÷ words per minute.
+show_read_time = true
+# words_per_minute = "200"
+
+[extra.nav]
+# Whether to show Atom/RSS feed button in the nav
+show_feed = true
+# Links used in the nav.
+# For local files use same link format as in Markdown,
+# i.e "@/blog/_index.md".
+# See https://www.getzola.org/documentation/content/linking/#internal-links
+links = [
+  { url = "@/blog/_index.md", name = "Blog" },
+  { url = "@/project/index.md", name = "Projects" },
+  { url = "@/resume/index.md", name = "Resume" },
+]
+
+[extra.footer]
+# Links used in the footer.
+# Same as the nav ones.
+links = [
+  { url = "@/blog/_index.md", name = "Blog" },
+  { url = "@/project/index.md", name = "Projects" },
+  { url = "@/resume/index.md", name = "Resume" },
+]
+# Social links in the footer.
+# Any URL-encoded SVG can be used as an icon.
+# https://simpleicons.org is recommended source of SVG icons.
+# For URL encoding https://yoksel.github.io/url-encoder/ can be used.
+socials = [
+  { url = "https://github.com/mukul1729", name = "GitHub", icon = "%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGitHub%3C/title%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E" },
+  { url = "https://linkedin.com/in/mukul1729", name = "Linkedin", icon = "%3Csvg role='img' viewBox='0 0 448 512' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3ELinkedin%3C/title%3E%3Cpath d='M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z'/%3E%3C/svg%3E" },
+  { url = "mailto:mukuljoshix@gmail.com", name = "Mail", icon = "%3Csvg role='img' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EMail%3C/title%3E%3Cpath d='M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z'/%3E%3C/svg%3E" },
+]
