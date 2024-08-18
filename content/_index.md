@@ -12,6 +12,6 @@ Framework, also love graphic programs and making command-line tools for linux.
 <br>
 <br>
 This website contains my blogs, projects and resume. It's made using zola and
-deployed at surge.sh.
+deployed using vercel.
 
 
