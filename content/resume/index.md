@@ -4,11 +4,11 @@ title = "Resume"
 
 
 
- <div class="columns download">
-          <p>
-             <a href="https://drive.google.com/file/d/1tNdKQ9vPPV40gFSjwGRTiDDQ5PJ5XJux/view?pli=1" class="button" download><i class="fa fa-download"></i>Download CV</a>
-          </p>
-       </div>
+<div class="columns download">
+<p>
+<a href="https://drive.google.com/file/d/1tNdKQ9vPPV40gFSjwGRTiDDQ5PJ5XJux/view?pli=1" class="button" download><i class="fa fa-download"></i>Download CV</a>
+</p>
+</div>
 
 ## <span style="color:Gray;">Education</span>
 **Maharana Pratap University of Agriculture and Technology** &nbsp;&nbsp;&nbsp;&nbsp; 
